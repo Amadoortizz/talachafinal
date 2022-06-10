@@ -53,7 +53,7 @@ class _CitaWidgetState extends State<CitaWidget> {
           elevation: 0,
         ),
       ),
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF999999),
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),

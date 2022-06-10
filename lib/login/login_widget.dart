@@ -37,7 +37,7 @@ class _LoginWidgetState extends State<LoginWidget> {
           elevation: 0,
         ),
       ),
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF9F9F9F),
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
@@ -130,7 +130,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                         contentPadding:
                             EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                       ),
-                      style: FlutterFlowTheme.of(context).bodyText1,
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily: 'Poppins',
+                            color: Color(0xFF080101),
+                          ),
                     ),
                   ),
                   Padding(

@@ -16,3 +16,4 @@ export 'cita/cita_widget.dart' show CitaWidget;
 export 'servicios1/servicios1_widget.dart' show Servicios1Widget;
 export 'servicios2/servicios2_widget.dart' show Servicios2Widget;
 export 'cita_regis/cita_regis_widget.dart' show CitaRegisWidget;
+export 'concluciones/concluciones_widget.dart' show ConclucionesWidget;

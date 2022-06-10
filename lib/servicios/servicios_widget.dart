@@ -1,3 +1,4 @@
+import '../concluciones/concluciones_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -40,7 +41,7 @@ class _ServiciosWidgetState extends State<ServiciosWidget> {
         centerTitle: true,
         elevation: 2,
       ),
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF999999),
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
@@ -290,20 +291,26 @@ class _ServiciosWidgetState extends State<ServiciosWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       5, 0, 5, 0),
                                   child: Text(
-                                    'TRABAJO',
+                                    'CONCLUSION',
                                     textAlign: TextAlign.center,
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
                                   ),
                                 ),
                                 Text(
-                                  'Busca empleo\nConsulta de NSS\nSaldo de prestamo \nSemanas cotizadas IMSS',
+                                  'CONCLUSION',
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context).bodyText2,
                                 ),
                                 FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    await Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            ConclucionesWidget(),
+                                      ),
+                                    );
                                   },
                                   text: 'Ver todos',
                                   options: FFButtonOptions(

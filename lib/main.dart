@@ -49,7 +49,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(brightness: Brightness.light),
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: _themeMode,
-      home: LoginWidget(),
+      home: NavBarPage(),
     );
   }
 }
@@ -90,9 +90,9 @@ class _NavBarPageState extends State<NavBarPage> {
         onTap: (i) => setState(() => _currentPage = tabs.keys.toList()[i]),
         backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
         selectedItemColor: Color(0xFF9F2241),
-        unselectedItemColor: Color(0xFFE4D0A9),
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
+        unselectedItemColor: Color(0xFFFAC64D),
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
